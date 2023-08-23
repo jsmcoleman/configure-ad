@@ -21,17 +21,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Setup Resources in Azure
-- Step 2
-- Step 3
-- Step 4
+- Install Active Directory
+- Create an Admin and Normal User Account
+- Join Client-1 to domain
+- Create additional users and log in
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Setup Resources in Azure</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3HsTGy9.png" height="80%" width="80%" alt="DC-1 virtual machine created"/>
+<img src="https://i.imgur.com/d0uezQZ.png" height="80%" width="80%" alt="DC-1 virtual machine created"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I created virtual machines for Domain Controller (DC-1) and Client using the same resource group and Vnet. After logging in to each virtual machine, I ensured the connection with a perpetual ping to DC-1's private ip address from Client.
 </p>
 <br />
 
