@@ -51,12 +51,12 @@ From DC-1, I set up a new forest as mydomain.com. Then, within Active Directory 
 </p>
 <p>
 After I set Client-1's DNS settings to the private IP address of DC-1 I logged in as Jane Doe under mydomain.com to give the option of remote desktop to the domain users. 
+</p>
 <img src="https://i.imgur.com/wkdo76u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
-  
-</p>
+<p>
 Then I logged in to DC-1 as Jane Doe, opened Powershell as an administrator and ran a script that created thousands of random user accounts.
+</p>
 <p>
 <img src="https://i.imgur.com/5HtgtHQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
