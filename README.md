@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
 <img src="https://i.imgur.com/3HsTGy9.png" height="80%" width="80%" alt="DC-1 virtual machine created"/>
-<img src="https://i.imgur.com/d0uezQZ.png" height="80%" width="80%" alt="DC-1 virtual machine created"/>
+<img src="https://i.imgur.com/d0uezQZ.png" height="80%" width="80%" alt="perpetual ping"/>
 </p>
 <p>
 I created virtual machines for Domain Controller (DC-1) and Client using the same resource group and Vnet. After logging in to each virtual machine, I ensured the connection with a perpetual ping to DC-1's private ip address from Client.
