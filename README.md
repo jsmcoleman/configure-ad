@@ -38,18 +38,28 @@ I created virtual machines for Domain Controller (DC-1) and Client using the sam
 <br />
 
 <p>
-<img src="https://i.imgur.com/VACXY17.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/VACXY17.png" height="80%" width="80%" alt="new foreest and organizational units"/>
 </p>
 <p>
-From DC-1, I set up a new forest as mydomain.com. Then created organizational units named _EMPLOYEES and _ADMINS to host my additional users I later created. Next, I created a new employee with the username jane_admin and added this user to the "Domain Admins" security group. 
+From DC-1, I set up a new forest as mydomain.com. Then, within Active Directory Users and Computers, I created organizational units named _EMPLOYEES and _ADMINS to host my additional users I later created. Next, I created a new employee with the username jane_admin and added this user to the "Domain Admins" security group. 
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/u738g5Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After I set Client-1's DNS settings to the private IP address of DC-1 I logged in as Jane Doe under mydomain.com to give the option of remote desktop to the domain users. 
+<img src="https://i.imgur.com/wkdo76u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+  
+</p>
+Then I logged in to DC-1 as Jane Doe, opened Powershell as an administrator and ran a script that created thousands of random user accounts.
+<p>
+<img src="https://i.imgur.com/5HtgtHQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Finally, to test the script I logged in as one of the random users.  
 <br />
