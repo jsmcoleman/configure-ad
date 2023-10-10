@@ -33,7 +33,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/d0uezQZ.png" height="80%" width="80%" alt="perpetual ping"/>
 </p>
 <p>
-I created virtual machines for Domain Controller (DC-1) and Client using the same resource group and Vnet. After logging in to each virtual machine, I ensured the connection with a perpetual ping to DC-1's private ip address from Client.
+I created virtual machines for Domain Controller (DC-1) and Client using the same resource group and Vnet. After logging in to each virtual machine, I ensured the connection with a perpetual ping to DC-1's private IP address from Client.
 </p>
 <br />
 
@@ -41,7 +41,7 @@ I created virtual machines for Domain Controller (DC-1) and Client using the sam
 <img src="https://i.imgur.com/VACXY17.png" height="80%" width="80%" alt="new foreest and organizational units"/>
 </p>
 <p>
-From DC-1, I set up a new forest as mydomain.com. Then, within Active Directory Users and Computers, I created organizational units named _EMPLOYEES and _ADMINS to host my additional users I later created. Next, I created a new employee with the username jane_admin and added this user to the "Domain Admins" security group. 
+From DC-1, I set up a new forest as mydomain.com. Then, within Active Directory Users and Computers, I created organizational units named _EMPLOYEES and _ADMINS to host my additional users created later. Next, I created a new employee with the username jane_admin and added this user to the "Domain Admins" security group. 
 
 </p>
 <br />
@@ -55,7 +55,7 @@ After I set Client-1's DNS settings to the private IP address of DC-1 I logged i
 <img src="https://i.imgur.com/wkdo76u.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Then I logged in to DC-1 as Jane Doe, opened Powershell as an administrator and ran a script that created thousands of random user accounts.
+After I logged in to DC-1 as Jane Doe, I opened Powershell as an administrator and ran a script that created thousands of random user accounts.
 </p>
 <p>
 <img src="https://i.imgur.com/5HtgtHQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
